@@ -1,0 +1,285 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif , 'Times New Roman', Times, serif;
+}
+
+.main{
+    margin-top: 10px;
+    /* max-width: 892px; */
+    margin-left: 10%;
+    max-width: 100%;
+    margin-right: 10%;
+    text-align: center;
+}
+
+
+/* Header Navbar */
+
+.head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav{
+   display: flex;
+   justify-content: space-around;
+   /* background-color: aqua; */
+   width: 360px;
+   list-style: none;
+   color: rgb(134, 134, 134);
+   font-family: sans-serif , 'Times New Roman', Times, serif;
+   font-weight: 600;
+   transition:ease-in-out;
+   transition-delay : 1ms;
+   transition-duration : 1s;
+   transition-property: initial ;
+   transition-timing-function: ease-in-out;
+   cursor: pointer;
+} 
+
+.btn{
+    background-color: rgb(0, 231, 154);
+    border: none;
+    padding: 10px;
+    color: white;
+    font-weight: 600;
+    border-radius: 30px;
+    transition:ease-in-out;
+    transition-delay : 1ms;
+    transition-duration : 1s;
+    transition-property: initial ;
+    transition-timing-function: ease-in-out;
+    cursor: pointer;
+}
+h1{
+    display: flex;
+    align-items: center;
+    color: rgb(63, 63, 63);
+}
+
+
+.gray{
+    
+    position: relative;
+    border-radius: 3px;
+    width: 15px;
+    height: 15px;
+    background-color: rgba(0, 231, 154,0.7);
+}
+
+.red{
+   
+    left: 10px;
+    position: absolute;
+    border-radius: 3px;
+     width: 15px;
+     height: 15px;
+     background-color: rgba(255, 69, 69,0.9);
+     bottom: 0.001px;
+     top:10px
+      
+}
+
+
+
+                     /*  Hero Section */
+.Container_Main{
+    position: relative;
+    margin-top: 10%;
+    max-width: 80%;
+    margin: 10%;
+     display: flex;
+     justify-content: center;
+     align-items: baseline;
+     flex-direction: column;
+    /* text-align: center; */
+}
+
+.heading{
+    align-self: center;
+    font-size: 50px;
+}
+
+.heading b{
+    color:  rgba(0, 231, 154,0.7); 
+    margin-left: 6px;
+}
+
+.para{
+    align-self: center;
+    margin-top: 20px;
+    font-weight: 300;
+    line-height: 20px;
+}
+
+/* Videoo content */
+
+.video_cont{
+    margin-top: 10%;
+    /* background-color: aqua; */
+    /* overflow: hidden; */
+
+    
+}
+
+.video_cont img{
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 20%;
+    
+    transition:ease-in-out;
+transition-delay : 1ms;
+transition-duration : 1s;
+transition-property: initial ;
+transition-timing-function: ease-in-out;
+cursor: pointer;
+
+
+}
+
+.Container_Main .secHead{
+    align-self: center;
+     position: relative;
+    /* margin-top:10%; */
+    margin-bottom: 10px;
+}
+
+.Container_Main button{
+     width: 150px;
+    margin-top: 6%;
+    align-self: center;
+    font-size: 16px;
+}
+
+
+
+/*  footer sectiomn */
+
+.last{
+    display: flex;
+    justify-content: space-between;
+ 
+    margin-bottom: 20%;
+    margin-top: 10%;
+    flex-wrap: wrap;
+}
+
+ul{
+    list-style: none;
+    text-align: start;
+}
+
+.last h5{
+    text-align: start;
+    line-height: 60px;
+    font-size: 16px;
+}
+
+.last li{
+    line-height: 40px;
+    transition:ease-in-out;
+    transition-delay : 1ms;
+    transition-duration : 0.3s;
+    transition-property: initial ;
+    transition-timing-function: ease-in-out;
+    cursor: pointer;
+}
+
+.Lobe .icon{
+    text-align: start;
+    font-size: 10px;
+    width: 100px;
+    margin-top: 20px;
+    margin-bottom: 24px;
+}
+
+
+.iconL{
+    margin-top: 23px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  
+}
+
+.cir{
+    margin: 10px;
+    background-color:  rgba(0, 231, 154,0.7); 
+   height: fit-content;
+  padding: 10px;
+    border-radius: 50%; 
+    transition:ease-in-out;
+    transition-delay : 1ms;
+    transition-duration : 1s;
+    transition-property: initial ;
+    transition-timing-function: ease-in-out;
+    cursor: pointer;
+    
+}
+
+
+/* Hovwe effect */
+
+.video_cont img:hover , button:hover , .cir:hover{
+ 
+    transform: scale(1.1);
+ 
+}
+
+.last li:hover{
+    transform: scale(1.1);  
+}
+
+.nav li:hover{
+    transform: scale(1.1); 
+    color: black; 
+}
+
+.menu i:hover{
+    transform: scale(1.1);  
+}
+
+.menu i{ 
+   padding:20px ;
+ background-color: rgba(207, 207, 207,0.6);
+ border-radius: 50px;
+ display: none;
+ transition:ease-in-out;
+ transition-delay : 1ms;
+ transition-duration : 1s;
+ transition-property: initial ;
+ transition-timing-function: ease-in-out;
+ cursor: pointer;
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+       
+    * , div{
+        font-size: 20px;
+
+    }
+
+    .nav{
+        display: none;
+    }
+    button{
+        display: none;
+    }
+    .menu i{
+        display: block;
+    }
+
+    
+    body {
+        /* background-color: lightblue; */
+      }
+}
